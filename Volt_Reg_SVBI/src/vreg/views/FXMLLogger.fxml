@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="1196.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vreg.views.FXMLLoggerController">
+   <children>
+      <SplitPane dividerPositions="0.8" orientation="VERTICAL" prefHeight="900.0" prefWidth="1196.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="446.0" prefWidth="1194.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <LineChart fx:id="voltageChart" animated="false" layoutX="346.0" prefHeight="354.0" prefWidth="1192.0" title="Voltajes" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <xAxis>
+                                  <CategoryAxis fx:id="voltage_xAxis" side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis fx:id="voltChartNumberAxis" autoRanging="false" label="Volts AC" lowerBound="110.0" side="LEFT" upperBound="130.0" />
+                                </yAxis>
+                              </LineChart>
+                              <Label layoutX="66.0" layoutY="6.0" text="Vin" />
+                              <Label fx:id="vinLbl" layoutX="94.0" layoutY="6.0" text="Label" />
+                              <Label layoutX="154.0" layoutY="6.0" text="Vout" />
+                              <Label fx:id="voutLbl" layoutX="192.0" layoutY="6.0" text="Label" />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <LineChart fx:id="controlChart" animated="false" prefHeight="353.0" prefWidth="1192.0" title="Salida PID" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <xAxis>
+                                  <CategoryAxis side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis autoRanging="false" lowerBound="-20.0" side="LEFT" upperBound="20.0" />
+                                </yAxis>
+                              </LineChart>
+                              <Label fx:id="pidOutlbl" layoutX="92.0" layoutY="14.0" text="Label" />
+                              <Label layoutX="33.0" layoutY="14.0" text="PID out" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TextField fx:id="upperRange" alignment="CENTER" layoutX="129.0" layoutY="74.0" onAction="#setUpperBound" prefHeight="25.0" prefWidth="53.0" />
+                  <TextField fx:id="lowerRange" alignment="CENTER" layoutX="129.0" layoutY="111.0" onAction="#setLowerBound" prefHeight="25.0" prefWidth="53.0" />
+                  <Label layoutX="72.0" layoutY="78.0" text="Superior" />
+                  <Label layoutX="72.0" layoutY="115.0" text="Inferior" />
+                  <Label layoutX="72.0" layoutY="42.0" text="Rango Grafico de Voltajes" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="1196.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vreg.views.FXMLCalibrateController">
+   <children>
+      <Pane prefHeight="900.0" prefWidth="1196.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <ImageView fitHeight="848.0" fitWidth="1196.0" opacity="0.16" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="136.0">
+         <image>
+            <Image url="@../images/logoADR3.png" />
+         </image>
+         <effect>
+            <Blend />
+         </effect>
+      </ImageView>
+      <Pane prefHeight="900.0" prefWidth="1196.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="V1_zero" alignment="CENTER" layoutX="283.0" layoutY="169.0" onAction="#actionController" onInputMethodTextChanged="#actionController" prefHeight="47.0" prefWidth="84.0" text="0.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="300.0" layoutY="228.0" text="Cero" textFill="#073d89">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <TextField fx:id="V1_factor" alignment="CENTER" layoutX="475.0" layoutY="169.0" onAction="#actionController" onInputMethodTextChanged="#actionController" prefHeight="47.0" prefWidth="84.0" text="1.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="439.0" layoutY="228.0" text="Factor de Rango" textFill="#073d89">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label layoutX="439.0" layoutY="362.0" text="Factor de Rango" textFill="#073d89">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <TextField fx:id="V2_factor" alignment="CENTER" layoutX="475.0" layoutY="303.0" onAction="#actionController" onInputMethodTextChanged="#actionController" prefHeight="47.0" prefWidth="84.0" text="1.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="300.0" layoutY="362.0" text="Cero" textFill="#073d89">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <TextField fx:id="V2_zero" alignment="CENTER" layoutX="283.0" layoutY="303.0" onAction="#actionController" onInputMethodTextChanged="#actionController" prefHeight="47.0" prefWidth="84.0" text="0.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="Vin_zero" alignment="CENTER" layoutX="283.0" layoutY="560.0" onAction="#actionController" onInputMethodTextChanged="#actionController" prefHeight="47.0" prefWidth="84.0" text="0.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="300.0" layoutY="619.0" text="Cero" textFill="#073d89">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <TextField fx:id="Vin_factor" alignment="CENTER" layoutX="475.0" layoutY="560.0" onAction="#actionController" onInputMethodTextChanged="#actionController" prefHeight="47.0" prefWidth="84.0" text="1.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="439.0" layoutY="619.0" text="Factor de Rango" textFill="#073d89">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label layoutX="439.0" layoutY="485.0" text="Factor de Rango" textFill="#073d89">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <TextField fx:id="V3_factor" alignment="CENTER" layoutX="475.0" layoutY="426.0" onAction="#actionController" onInputMethodTextChanged="#actionController" prefHeight="47.0" prefWidth="84.0" text="1.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="300.0" layoutY="485.0" text="Cero" textFill="#073d89">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <TextField fx:id="V3_zero" alignment="CENTER" layoutX="283.0" layoutY="426.0" onAction="#actionController" onInputMethodTextChanged="#actionController" prefHeight="47.0" prefWidth="84.0" text="0.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Button fx:id="resetMinButton" layoutX="273.0" layoutY="724.0" mnemonicParsing="false" onAction="#actionController" text="Reset Min" textFill="#073d89">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Button fx:id="resetMaxButton" layoutX="464.0" layoutY="724.0" mnemonicParsing="false" onAction="#actionController" text="Reset Max" textFill="#073d89">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Line endX="550.0" layoutX="563.0" layoutY="139.0" startX="-450.0" />
+            <Line endX="550.0" layoutX="563.0" layoutY="539.0" startX="-450.0" />
+            <Line endX="550.0" layoutX="563.0" layoutY="682.0" startX="-450.0" />
+            <Label layoutX="152.0" layoutY="175.0" text="V1 L-N" textFill="#073d89">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label layoutX="152.0" layoutY="309.0" text="V2 L-N" textFill="#073d89">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label layoutX="152.0" layoutY="432.0" text="V3 L-N" textFill="#073d89">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label layoutX="152.0" layoutY="566.0" text="Vin L-N" textFill="#073d89">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label layoutX="257.0" layoutY="72.0" text="Calibracion de Transductores de Voltaje" textFill="#073d89">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <effect>
+                  <DropShadow height="29.9" radius="13.7075" width="26.93" />
+               </effect>
+            </Label>
+            <TextField fx:id="lcd_contrast" alignment="CENTER" layoutX="738.0" layoutY="228.0" onAction="#actionController" onInputMethodTextChanged="#actionController" prefHeight="47.0" prefWidth="84.0" text="255">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="lcd_backlight" alignment="CENTER" layoutX="887.0" layoutY="222.0" onAction="#actionController" onInputMethodTextChanged="#actionController" prefHeight="47.0" prefWidth="84.0" text="255">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="794.0" layoutY="175.0" text="LCD Display" textFill="#073d89">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="729.0" layoutY="292.0" text="Contraste" textFill="#073d89">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="881.0" layoutY="292.0" text="Backlight" textFill="#073d89">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="alarm_min" alignment="CENTER" layoutX="738.0" layoutY="426.0" onAction="#actionController" onInputMethodTextChanged="#actionController" prefHeight="47.0" prefWidth="84.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="alarm_max" alignment="CENTER" layoutX="900.0" layoutY="427.0" onAction="#actionController" onInputMethodTextChanged="#actionController" prefHeight="47.0" prefWidth="84.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="733.0" layoutY="362.0" text="Alarmas (Rango de Control)" textFill="#073d89">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="755.0" layoutY="485.0" text="Min" textFill="#073d89">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="920.0" layoutY="485.0" text="Max" textFill="#073d89">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+   <effect>
+      <GaussianBlur radius="0.0" />
+   </effect>
+</AnchorPane>
