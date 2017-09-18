@@ -151,7 +151,7 @@
                   <Font size="20.0" />
                </font>
             </TextField>
-            <Button fx:id="resetMinButton" layoutX="273.0" layoutY="724.0" mnemonicParsing="false" onAction="#actionController" text="Reset Min" textFill="#073d89">
+            <Button fx:id="resetMinButton" layoutX="729.0" layoutY="564.0" mnemonicParsing="false" onAction="#actionController" text="Reset Min" textFill="#073d89">
                <font>
                   <Font size="18.0" />
                </font>
@@ -159,7 +159,7 @@
                   <DropShadow />
                </effect>
             </Button>
-            <Button fx:id="resetMaxButton" layoutX="464.0" layoutY="724.0" mnemonicParsing="false" onAction="#actionController" text="Reset Max" textFill="#073d89">
+            <Button fx:id="resetMaxButton" layoutX="889.0" layoutY="564.0" mnemonicParsing="false" onAction="#actionController" text="Reset Max" textFill="#073d89">
                <font>
                   <Font size="18.0" />
                </font>

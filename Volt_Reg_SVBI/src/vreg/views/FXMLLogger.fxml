@@ -53,11 +53,11 @@
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                <children>
-                  <TextField fx:id="upperRange" alignment="CENTER" layoutX="129.0" layoutY="74.0" onAction="#setUpperBound" prefHeight="25.0" prefWidth="53.0" />
-                  <TextField fx:id="lowerRange" alignment="CENTER" layoutX="129.0" layoutY="111.0" onAction="#setLowerBound" prefHeight="25.0" prefWidth="53.0" />
-                  <Label layoutX="72.0" layoutY="78.0" text="Superior" />
-                  <Label layoutX="72.0" layoutY="115.0" text="Inferior" />
-                  <Label layoutX="72.0" layoutY="42.0" text="Rango Grafico de Voltajes" />
+                  <TextField fx:id="upperRange" alignment="CENTER" layoutX="412.0" layoutY="14.0" onAction="#setUpperBound" prefHeight="25.0" prefWidth="53.0" />
+                  <TextField fx:id="lowerRange" alignment="CENTER" layoutX="638.0" layoutY="14.0" onAction="#setLowerBound" prefHeight="25.0" prefWidth="53.0" />
+                  <Label layoutX="332.0" layoutY="20.0" text="Superior" />
+                  <Label layoutX="568.0" layoutY="20.0" text="Inferior" />
+                  <Label layoutX="66.0" layoutY="20.0" text="Rango Grafico de Voltajes" />
                </children>
             </AnchorPane>
         </items>
